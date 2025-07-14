@@ -104,14 +104,17 @@
       }
 
       .container {
-        max-width: 1400px;
-        margin: auto;
         padding: 70px 40px;
         position: relative;
         background: var(--card-bg);
       }
       body.dark .container {
         background: transparent;
+      }
+      @media (max-width: 576px) {
+        .container {
+          padding: 20px 5px;
+        }
       }
 
       .header {
